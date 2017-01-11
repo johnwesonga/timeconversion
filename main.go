@@ -8,6 +8,7 @@ import (
 
 var layout = "03:05:04PM"
 
+// ConvertTime converts time from 12hr to 24hr.
 func ConvertTime(input string) string {
 	t, err := time.Parse(layout, input)
 	if err != nil {
